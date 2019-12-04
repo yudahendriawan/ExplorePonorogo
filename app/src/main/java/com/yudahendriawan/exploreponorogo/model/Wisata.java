@@ -1,4 +1,4 @@
-package com.yudahendriawan.exploreponorogo.Model;
+package com.yudahendriawan.exploreponorogo.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

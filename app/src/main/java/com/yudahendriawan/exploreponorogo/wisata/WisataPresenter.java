@@ -1,10 +1,10 @@
-package com.yudahendriawan.exploreponorogo.Wisata;
+package com.yudahendriawan.exploreponorogo.wisata;
 
 import androidx.annotation.NonNull;
 
-import com.yudahendriawan.exploreponorogo.Model.Wisata;
-import com.yudahendriawan.exploreponorogo.RestApi.ApiClient;
-import com.yudahendriawan.exploreponorogo.RestApi.ApiInterface;
+import com.yudahendriawan.exploreponorogo.model.Wisata;
+import com.yudahendriawan.exploreponorogo.api.ApiClient;
+import com.yudahendriawan.exploreponorogo.api.ApiInterface;
 
 import java.util.List;
 

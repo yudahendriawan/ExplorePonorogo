@@ -1,17 +1,15 @@
-package com.yudahendriawan.exploreponorogo.Wisata;
+package com.yudahendriawan.exploreponorogo.wisata;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.yudahendriawan.exploreponorogo.Model.Wisata;
+import com.yudahendriawan.exploreponorogo.model.Wisata;
 import com.yudahendriawan.exploreponorogo.R;
 
 import java.util.List;

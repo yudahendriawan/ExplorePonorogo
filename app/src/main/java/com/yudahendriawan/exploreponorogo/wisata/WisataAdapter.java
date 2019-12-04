@@ -1,7 +1,6 @@
-package com.yudahendriawan.exploreponorogo.Wisata;
+package com.yudahendriawan.exploreponorogo.wisata;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.yudahendriawan.exploreponorogo.Model.Wisata;
+import com.yudahendriawan.exploreponorogo.model.Wisata;
 import com.yudahendriawan.exploreponorogo.R;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.yudahendriawan.exploreponorogo.RestApi;
+package com.yudahendriawan.exploreponorogo.api;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     android:id="@+id/swipe_refresh"
-    tools:context=".Wisata.WisataActivity"
+    tools:context=".wisata.WisataActivity"
     android:columnCount="3">
 
     <androidx.recyclerview.widget.RecyclerView

@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.yudahendriawan.exploreponorogo.Wisata.WisataActivity;
+import com.yudahendriawan.exploreponorogo.wisata.WisataActivity;
 
 public class MainActivity extends AppCompatActivity {
 

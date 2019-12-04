@@ -1,6 +1,6 @@
-package com.yudahendriawan.exploreponorogo.Wisata;
+package com.yudahendriawan.exploreponorogo.wisata;
 
-import com.yudahendriawan.exploreponorogo.Model.Wisata;
+import com.yudahendriawan.exploreponorogo.model.Wisata;
 
 import java.util.List;
 

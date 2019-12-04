@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_margin="10dp"
     android:layout_width="match_parent"
-    android:layout_height="150dp">
+    android:layout_height="175dp">
 
     <ImageView
         android:id="@+id/image_wisata"
@@ -17,6 +17,7 @@
     <TextView
         android:id="@+id/name_wisata"
         android:padding="5dp"
+        android:textSize="16sp"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_alignBottom="@+id/image_wisata"
