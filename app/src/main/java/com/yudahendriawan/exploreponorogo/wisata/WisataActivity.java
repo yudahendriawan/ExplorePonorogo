@@ -7,6 +7,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.yudahendriawan.exploreponorogo.model.Wisata;
@@ -31,6 +32,11 @@ public class WisataActivity extends AppCompatActivity implements WisataView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wisata);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        //getSupportActionBar().hide();
 
         recyclerView = findViewById(R.id.recyclerview);
         swipeRefresh = findViewById(R.id.swipe_refresh);

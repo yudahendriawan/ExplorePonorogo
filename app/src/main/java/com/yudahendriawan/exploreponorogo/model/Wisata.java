@@ -1,9 +1,12 @@
 package com.yudahendriawan.exploreponorogo.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Wisata {
+public class Wisata implements Parcelable {
 
     @Expose
     @SerializedName("id")
@@ -29,6 +32,40 @@ public class Wisata {
     @SerializedName("imgUrl")
     private String imgUrl;
 
+    @Expose
+    @SerializedName("longlat")
+    private String longlat;
+
+
+    protected Wisata(Parcel in) {
+        id = in.readInt();
+        name = in.readString();
+        address = in.readString();
+        description = in.readString();
+        type = in.readString();
+        imgUrl = in.readString();
+        longlat = in.readString();
+    }
+
+    public static final Creator<Wisata> CREATOR = new Creator<Wisata>() {
+        @Override
+        public Wisata createFromParcel(Parcel in) {
+            return new Wisata(in);
+        }
+
+        @Override
+        public Wisata[] newArray(int size) {
+            return new Wisata[size];
+        }
+    };
+
+    public String getLonglat() {
+        return longlat;
+    }
+
+    public void setLonglat(String longlat) {
+        this.longlat = longlat;
+    }
 
     public int getId() {
         return id;
@@ -79,4 +116,19 @@ public class Wisata {
     }
 
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id);
+        dest.writeString(name);
+        dest.writeString(address);
+        dest.writeString(description);
+        dest.writeString(type);
+        dest.writeString(imgUrl);
+        dest.writeString(longlat);
+    }
 }

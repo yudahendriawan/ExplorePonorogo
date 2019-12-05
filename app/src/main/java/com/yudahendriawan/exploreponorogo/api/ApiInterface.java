@@ -1,5 +1,7 @@
 package com.yudahendriawan.exploreponorogo.api;
 
+import com.yudahendriawan.exploreponorogo.model.Coffee;
+import com.yudahendriawan.exploreponorogo.model.Food;
 import com.yudahendriawan.exploreponorogo.model.Wisata;
 
 import java.util.List;
@@ -13,8 +15,8 @@ public interface ApiInterface {
     Call<List<Wisata>> getWisata();
 
     @GET("coffee.php")
-    Call<List<Wisata>> getCoffee();
+    Call<List<Coffee>> getCoffee();
 
     @GET("food.php")
-    Call<List<Wisata>> getFood();
+    Call<List<Food>> getFood();
 }

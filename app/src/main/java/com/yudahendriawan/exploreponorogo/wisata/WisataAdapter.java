@@ -1,6 +1,7 @@
 package com.yudahendriawan.exploreponorogo.wisata;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.yudahendriawan.exploreponorogo.util.Key;
 import com.yudahendriawan.exploreponorogo.model.Wisata;
 import com.yudahendriawan.exploreponorogo.R;
 
@@ -37,10 +39,12 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.RecyclerVi
 
     @Override
     public void onBindViewHolder(@NonNull WisataAdapter.RecyclerViewAdapter holder, int position) {
-        Wisata wisata = wisatas.get(position);
+//        Wisata wisata = wisatas.get(position);
+//
+//        Glide.with(context).load(wisata.getImgUrl()).into(holder.image);
+//        holder.name.setText(wisata.getName());
+        holder.binding(wisatas.get(position));
 
-        Glide.with(context).load(wisata.getImgUrl()).into(holder.image);
-        holder.name.setText(wisata.getName());
 
     }
 
@@ -61,10 +65,20 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.RecyclerVi
             image = itemView.findViewById(R.id.image_wisata);
             name = itemView.findViewById(R.id.name_wisata);
 
+
+        }
+
+        public void binding(final Wisata wisata){
+            Glide.with(context).load(wisata.getImgUrl()).into(image);
+            name.setText(wisata.getName());
+
             image.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    itemClickListener.onItemClick(v,getAdapterPosition());
+               //     itemClickListener.onItemClick(v,getAdapterPosition());
+                    Intent intent = new Intent(v.getContext(), DetailWisata.class);
+                    intent.putExtra(Key.INTENT_DATA,wisata);
+                    v.getContext().startActivity(intent);
                 }
             });
         }

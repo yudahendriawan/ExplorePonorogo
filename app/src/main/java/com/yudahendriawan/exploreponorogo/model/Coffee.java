@@ -1,9 +1,12 @@
 package com.yudahendriawan.exploreponorogo.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Coffee {
+public class Coffee implements Parcelable {
     @Expose
     @SerializedName("id")
     private int id;
@@ -28,6 +31,27 @@ public class Coffee {
     @SerializedName("imgUrl")
     private String imgUrl;
 
+
+    protected Coffee(Parcel in) {
+        id = in.readInt();
+        name = in.readString();
+        address = in.readString();
+        description = in.readString();
+        type = in.readString();
+        imgUrl = in.readString();
+    }
+
+    public static final Creator<Coffee> CREATOR = new Creator<Coffee>() {
+        @Override
+        public Coffee createFromParcel(Parcel in) {
+            return new Coffee(in);
+        }
+
+        @Override
+        public Coffee[] newArray(int size) {
+            return new Coffee[size];
+        }
+    };
 
     public int getId() {
         return id;
@@ -75,5 +99,20 @@ public class Coffee {
 
     public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id);
+        dest.writeString(name);
+        dest.writeString(address);
+        dest.writeString(description);
+        dest.writeString(type);
+        dest.writeString(imgUrl);
     }
 }

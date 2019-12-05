@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".food.FoodActivity"></activity>
+        <activity android:name=".coffee.DetailCoffee"></activity>
+        <activity android:name=".food.DetailFood" />
+        <activity android:name=".wisata.DetailWisata" />
+        <activity android:name=".food.FoodActivity" />
         <activity android:name=".coffee.CoffeeActivity" />
         <activity android:name=".wisata.WisataActivity" />
         <activity android:name=".SplashActivity">
