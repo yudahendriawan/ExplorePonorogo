@@ -101,6 +101,28 @@
 
         </LinearLayout>
 
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_directions" />
+
+            <TextView
+                android:id="@+id/coffee_longlat_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:text="NAVIGATE WITH MAPS" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 

@@ -31,6 +31,10 @@ public class Coffee implements Parcelable {
     @SerializedName("imgUrl")
     private String imgUrl;
 
+    @Expose
+    @SerializedName("longlat")
+    private String longlat;
+
 
     protected Coffee(Parcel in) {
         id = in.readInt();
@@ -39,6 +43,7 @@ public class Coffee implements Parcelable {
         description = in.readString();
         type = in.readString();
         imgUrl = in.readString();
+        longlat = in.readString();
     }
 
     public static final Creator<Coffee> CREATOR = new Creator<Coffee>() {
@@ -52,6 +57,14 @@ public class Coffee implements Parcelable {
             return new Coffee[size];
         }
     };
+
+    public String getLonglat() {
+        return longlat;
+    }
+
+    public void setLonglat(String longlat) {
+        this.longlat = longlat;
+    }
 
     public int getId() {
         return id;
@@ -114,5 +127,6 @@ public class Coffee implements Parcelable {
         dest.writeString(description);
         dest.writeString(type);
         dest.writeString(imgUrl);
+        dest.writeString(longlat);
     }
 }

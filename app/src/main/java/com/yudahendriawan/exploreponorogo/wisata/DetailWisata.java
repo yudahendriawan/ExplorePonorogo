@@ -18,8 +18,6 @@ import com.yudahendriawan.exploreponorogo.util.Key;
 public class DetailWisata extends AppCompatActivity {
     ImageView imageView;
     TextView wisataAddress, wisataName, wisataDescription, wisataLonglat;
-
-
     Wisata wisata;
 
     @Override
@@ -47,7 +45,7 @@ public class DetailWisata extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("http://maps.google.com/maps?daddr="+wisata.getLonglat()));
+                intent.setData(Uri.parse(Key.GOOGLE_MAPS_URI+wisata.getLonglat()));
                 startActivity(intent);
             }
         });
