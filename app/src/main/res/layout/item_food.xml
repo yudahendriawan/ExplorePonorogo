@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="175dp">
+
+    <ImageView
+        android:id="@+id/image_food"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:src="@drawable/reog"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/name_food"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/image_food"
+        tools:text="FWEJFJEWBFHEWBFEWBHFHEWHJ"
+        android:gravity="bottom"
+        android:textColor="#ffffff"
+        android:background="@color/cardview_shadow_start_color" />
+
+</RelativeLayout>

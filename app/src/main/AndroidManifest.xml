@@ -12,13 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".coffee.DetailCoffee"></activity>
-        <activity android:name=".food.DetailFood" />
-        <activity android:name=".wisata.DetailWisata" />
-        <activity android:name=".food.FoodActivity" />
-        <activity android:name=".coffee.CoffeeActivity" />
-        <activity android:name=".wisata.WisataActivity" />
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".PromotionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".coffee.DetailCoffee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.DetailFood"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wisata.DetailWisata"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.FoodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coffee.CoffeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wisata.WisataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +44,9 @@
         </activity>
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

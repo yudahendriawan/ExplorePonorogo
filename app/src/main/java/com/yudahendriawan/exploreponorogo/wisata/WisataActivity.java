@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.yudahendriawan.exploreponorogo.model.Wisata;
 import com.yudahendriawan.exploreponorogo.R;
+import com.yudahendriawan.exploreponorogo.util.Key;
 
 import java.util.List;
 
@@ -32,6 +33,8 @@ public class WisataActivity extends AppCompatActivity implements WisataView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wisata);
+
+        getSupportActionBar().setTitle(Key.TITLE_WISATA);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);

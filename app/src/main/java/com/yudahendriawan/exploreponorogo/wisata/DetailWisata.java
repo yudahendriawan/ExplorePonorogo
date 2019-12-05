@@ -25,6 +25,7 @@ public class DetailWisata extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_wisata);
 
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -49,5 +50,8 @@ public class DetailWisata extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //   getSupportActionBar().setTitle(wisata.getName());
+        getSupportActionBar().hide();
     }
 }

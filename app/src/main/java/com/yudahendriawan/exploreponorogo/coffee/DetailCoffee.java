@@ -51,5 +51,8 @@ public class DetailCoffee extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // getSupportActionBar().setTitle(coffee.getName());
+        getSupportActionBar().hide();
     }
 }

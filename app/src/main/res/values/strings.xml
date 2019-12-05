@@ -1,5 +1,12 @@
 <resources>
-    <string name="app_name">ExplorePonorogo</string>
+    <string name="app_name">Explore Ponorogo</string>
     <string name="create_new_accout"> <u>Create new accout?</u> </string>
     <string name="tools_description">Cafe ini memiliki desain indoor yang sangat menarik dan warna warni. Banyak lukisan warna warni pada setiap bagian dinding cafe. Cafe di Ponorogo satu ini memiliki banyak spot yang dapat dijadikan untuk foto kekinian. Setiap sudut cafe dihias dengan menarik seperti dengan lukisan, foto-foto dan beragam furnitur.</string>
+    <string name="about">About</string>
+    <string name="about_me">Aplikasi ini dibuat oleh Yuda Hendriawan</string>
+    <string name="versi">Version</string>
+    <string name="version">Versi 1.1.0</string>
+    <string name="exit">Exit</string>
+    <string name="login">Login</string>
+    <string name="exit_warning">Apakah anda ingin keluar?</string>
 </resources>

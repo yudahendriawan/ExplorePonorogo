@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.yudahendriawan.exploreponorogo.R;
 import com.yudahendriawan.exploreponorogo.model.Coffee;
+import com.yudahendriawan.exploreponorogo.util.Key;
 
 import java.util.List;
 
@@ -32,6 +33,8 @@ public class CoffeeActivity extends AppCompatActivity implements CoffeeView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coffee);
+
+        getSupportActionBar().setTitle(Key.TITLE_COFFEE);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
